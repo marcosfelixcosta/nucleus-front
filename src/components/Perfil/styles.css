@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+}
+
+.menu-container {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-container button .arrow {
+  width: 18px;
+  height: 18px;
+}
+
+.menu-trigger {
+  background: transparent;
+  border-radius: 90px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 6px;
+  color: #ffffff;
+  border: none;
+  vertical-align: middle;
+  transition: box-shadow 0.4s ease;
+  margin-left: auto; /* Strictly for positioning */
+}
+
+.menu-trigger:hover {
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+}
+
+.menu-trigger span {
+  font-weight: 700;
+  vertical-align: middle;
+  font-size: 14px;
+  margin: 0 10px;
+}
+
+.menu-trigger img {
+  border-radius: 90px;
+}
+
+.menu {
+  background: #302935;
+  border-radius: 1px;
+  outline: none;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  /* width: 300px; */
+  width: 175px;
+  box-shadow: 0 7px 8px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20px);
+  transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
+}
+
+.menu.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  border: .5px solid #302935;
+  border-bottom: 1.5px solid rgba(0, 0, 0, 0.3);
+  text-align: center; /* alteração */
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+}
+
+.menu li a:hover {
+
+  background-color:rgba(0, 0, 0, 0.3);
+  border-bottom: 1.5px solid #F29502;
+  color: #F29502;
+
+}
+
+.menu li button {
+  background:none;
+  border: none;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 15px 20px;
+  font-size: 16px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+  font-weight: 600;    
+}
+
+.menu li button:hover {
+
+  background-color:rgba(0, 0, 0, 0.3);
+  border-bottom: 1.5px solid #F29502;
+  color: #F29502;
+}
+
