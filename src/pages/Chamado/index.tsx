@@ -15,8 +15,6 @@ interface Cadchamado {
   ch_categoria: string;
   ch_assunto: string;
   ch_status: boolean;
-
-
 }
 
 
@@ -35,8 +33,7 @@ const CreateChamado: React.FC = () => {
    ch_categoria: '',
    ch_assunto: '',
    ch_status: false,
-  
-
+ 
   });
 
 
